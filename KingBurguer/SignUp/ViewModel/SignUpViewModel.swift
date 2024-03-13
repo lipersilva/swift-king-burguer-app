@@ -32,7 +32,7 @@ class SignUpViewModel {
 		
 		//aqui eu espero 2 segundos (latencia)
 		DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
-			self.state = .error("Erro interno no servidor")
+			self.state = .goToHome
 		}
 	}
 }
